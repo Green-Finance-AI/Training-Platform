@@ -1,0 +1,561 @@
+/*-- Use For Custom Styling --*/
+@import url('../fonts/stylesheet.css');
+
+/* ===================================
+   Fonts
+====================================== */
+.main-font{font-family: 'HandelGothicBT', sans-serif;}
+.alt-font{font-family: 'GothamSSm', sans-serif;}
+
+
+/* ===================================
+   Banner Section
+====================================== */
+#particles-js {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    width: 100%;
+    height: 100vh; /* Ensure the section takes the full viewport height */
+    background: #0a0d2c;  /* fallback for old browsers */
+    background: -webkit-radial-gradient(circle, black 20%, #23262d 80%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(circle, black 20%, #23262d 80%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.slider-area{
+    position: absolute;
+}
+
+/* Icon Text Hover */
+.github-text-hvr:hover{color:#8E47FE !important;}
+.docker-text-hvr:hover{color:#1D63ED !important;}
+.envelope-text-hvr:hover{color:#1ED873 !important;}
+.linkedin-text-hvr:hover{color:#0A66C2 !important;}
+
+/* ===================================
+   Typography changes
+====================================== */
+body {font-family: 'GothamSSm', sans-serif; font-size: 16px; color: #ffffff; background-color: #23262d; font-weight:normal; line-height:25px; width: 100%; overflow-x: hidden;}
+p{font-family: 'GothamSSm', sans-serif;}
+
+.slider-area h2 {
+    font-weight: normal;
+    font-family: 'HandelGothicBT', sans-serif;
+    font-size: 120px;
+    line-height: 1;
+}
+.navbar-simple .navbar-nav .nav-link {
+    font-weight: 700;
+    font-family: 'GothamSSm', sans-serif;
+}
+.btn {
+    font-family: 'GothamSSm Narrow', sans-serif; 
+    font-weight: normal; 
+}
+.side-nav .navbar-nav .nav-link {
+    font-weight: 200;
+    font-family: 'GothamSSm', sans-serif;
+}
+.heading-area .heading {
+    font-weight: normal;
+    font-family: 'HandelGothic', sans-serif;
+}
+.heading-area .sub-heading {
+    font-weight: 200;
+    font-family: 'GothamSSm', sans-serif;
+}
+.about .main-title h2 {
+    font-weight: normal;
+    font-family: 'HandelGothicBT', sans-serif;
+}
+.about .main-title h5 {
+    font-weight: 200;
+    font-family: 'GothamSSm', sans-serif;
+    color: #1ED873;
+}
+.about .main-title p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0.7;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    font-family: 'GothamSSm', sans-serif;
+}
+.about ul li {
+    font-size: 16px;
+    display: flex;
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 30px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    font-family: 'GothamSSm', sans-serif;
+}
+.pricing .price-item {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.pricing .price_header_text {
+    font-weight: 500;
+    font-family: 'GothamSSm', sans-serif;
+}
+.pricing .price_header_content {
+    font-weight: normal;
+    font-family: 'GothamSSm', sans-serif;
+}
+.pricing .actual_price {
+    font-weight: bold;
+    font-family: 'GothamSSm' , sans-serif;
+    line-height: 1;
+}
+.pricing .actual_price .dollar{
+    font-family: 'GothamSSm XNarrow' , sans-serif;
+}
+.pricing .price-list li{
+    font-weight: 300;
+    font-family: 'GothamSSm', sans-serif;
+}
+.pricing .actual_price .small_font {
+    font-family: 'GothamSSm XNarrow', sans-serif;
+    line-height: 1;
+}
+.footer .company-about {
+    font-family: 'GothamSSm Narrow';
+}
+.footer .footer-social a {
+    font-size: 16px;
+}
+.footer {
+    padding-bottom: 2.5rem;
+}
+/* Responsive Typography for GREEN FINANCE AI */
+@media (max-width: 1200px) {
+    .slider-area h2 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-area h2 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-area h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-area h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider-area h2 {
+        font-size: 30px;
+    }
+}
+
+/* Gradient with visible purple/blue highlight mirroring the logo gradient */
+.fixed-nav-on-scroll, .quarter-circle {
+    background: linear-gradient(135deg, #7a67ee, #32ff90, #1abc6e);
+    box-shadow: 0 0 12px rgba(50, 255, 144, 0.7), 0 0 20px rgba(106, 90, 205, 0.4);
+}
+
+.fixed-nav-on-scroll:hover, .quarter-circle:hover {
+    background: linear-gradient(135deg, #8a76ff, #45ffaa, #1ed873);
+    box-shadow: 0 0 15px rgba(69, 255, 170, 0.8), 0 0 25px rgba(123, 104, 238, 0.5);
+}
+.btn {
+    border-radius: 10px; /* Same border-radius as the price cards */
+}
+
+.fixed-nav-on-scroll, .quarter-circle.btn_sideNavClose {
+    height: 80px;
+    width: 80px;
+}
+.fixed-nav-on-scroll .fixed-icon-scroll {
+    display: inline-block;
+    position: relative;
+    top: -10%;
+    left: -10%;
+}
+.menu_bars2.active {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+/* Apply the same gradient and glow to the .go-top element */
+.go-top {
+    background: linear-gradient(135deg, #7a67ee, #32ff90, #1abc6e);
+    box-shadow: 0 0 0px rgba(50, 255, 144, 0.7), 0 0 0px rgba(106, 90, 205, 0.4);
+}
+
+.go-top:hover {
+    background: linear-gradient(135deg, #8a76ff, #45ffaa, #1ed873);
+    box-shadow: 0 0 15px rgba(69, 255, 170, 0.8), 0 0 25px rgba(123, 104, 238, 0.5);
+}
+::-webkit-scrollbar-thumb {
+    background: #1ED873; /* Fallback color */
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #7a67ee, #32ff90, #1abc6e); /* Apply the same gradient */
+    box-shadow: none; /* Remove the glow */
+}
+
+/* ===================================
+     UI-Block-13
+==================================== */
+.icon-class {
+    width: 42px; /* Match the size of the Font Awesome icons */
+    height: 42px; /* Match the size of the Font Awesome icons */
+    fill: #1ED873; /* Match the color of the Font Awesome icons */
+}
+
+.opacity-icon {
+    width: 120px; /* Match the size of the Font Awesome opacity icons */
+    height: 120px; /* Match the size of the Font Awesome opacity icons */
+    fill: #fff; /* Match the color of the Font Awesome opacity icons */
+    opacity: 0; /* Initially hidden */
+    position: absolute;
+    top: 30px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: capitalize;
+    animation: scale .6s alternate infinite linear both;
+}
+
+.ui-block-13.about .about-box:hover .icon-class {
+    fill: #fff; /* Match the hover color of the Font Awesome icons */
+}
+
+.about-box:hover .opacity-icon {
+    opacity: .09; /* Show the opacity icon on hover */
+    transform: translateY(-10px); /* Match the hover transform of the Font Awesome icons */
+}
+
+.ui-block-13.about .main-title {
+    position: relative;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.ui-block-13.about .main-title h5 {
+    font-family: 'GothamSSm', sans-serif; /* Match custom font */
+    font-weight: 200; /* Match custom font weight */
+    margin-bottom: 1.1rem;
+    color: #1ED873; /* Match custom color */
+    font-size: 16px;
+}
+
+.ui-block-13.about .main-title h2 {
+    text-transform: capitalize;
+    font-weight: normal; /* Match custom font weight */
+    font-family: 'HandelGothicBT', sans-serif; /* Match custom font */
+    color: #ffffff; /* Match custom color */
+    line-height: 1.2;
+    max-width: 650px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ui-block-13.about .main-title p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: 'GothamSSm', sans-serif; /* Match custom font */
+    font-size: 16px; /* Match custom font size */
+    color: #ffffff; /* Match custom color */
+    opacity: 0.7; /* Match custom opacity */
+    font-weight: 300; /* Match custom font weight */
+    line-height: 26px; /* Match custom line height */
+    letter-spacing: 0.5px; /* Match custom letter spacing */
+}
+
+.ui-block-13.about .main-title.style-two h5 {
+    margin-bottom: 1.5rem;
+}
+
+.ui-block-13.about .main-title.style-two h2 {
+    text-transform: initial;
+    font-size: 40px;
+    font-weight: 400;
+    max-width: 720px;
+}
+
+.ui-block-13.about .main-title.style-two p {
+    color: #ffffff; /* Match custom color */
+    max-width: 720px;
+}
+
+.ui-block-13.about .about-box {
+    border-radius: 10px; /* Match custom border radius */
+    padding: 50px 15px 50px;
+    background: #181a1f; /* Match custom background color */
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px rgba(127, 123, 123, 0.1);
+    box-shadow: 0 0 5px rgba(127, 123, 123, 0.1);
+    /* transition: ease-in-out 0.3s; */
+}
+
+.ui-block-13.about .about-box:hover {
+    background: #1ED873; /* Match custom hover background color */
+    -webkit-box-shadow: 0 0 10px -2px rgba(127, 123, 123, 0.9);
+    box-shadow: 0 0 10px -2px rgba(127, 123, 123, 0.9);
+}
+
+.ui-block-13.about .about-box .about-main-icon i {
+    color: #1ED873;
+    font-size: 40px;
+    transform: translateY(0);
+    transition: ease-in-out 0.3s;
+}
+
+.ui-block-13.about .about-box:hover .about-main-icon i {
+    transform: translateY(-10px);
+}
+
+.ui-block-13.about .about-box h5 {
+    font-weight: 200; /* Match custom font weight */
+    font-family: 'GothamSSm', sans-serif; /* Match custom font */
+    color: #ffffff; /* Match custom color */
+    /* transition: ease-in-out 0.3s; */
+}
+
+.ui-block-13.about .about-box:hover i, .ui-block-13.about .about-box:hover h5 {
+    color: #fff;
+    transition: ease-in-out 0s;
+}
+
+.ui-block-13.about .about-opacity-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ui-block-13.about .about-opacity-icon i {
+    position: absolute;
+    color: #1ED873; /* Match custom color */
+    top: 30px;
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: scale .6s alternate infinite linear both;
+}
+
+@keyframes scale {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px)
+    }
+}
+
+.ui-block-13.about .about-box:hover .about-opacity-icon i {
+    opacity: .09;
+}
+
+.ui-block-13.about .about-box.active {
+    background: #1ED873; /* Match custom active background color */
+    -webkit-box-shadow: 0 0 10px -2px rgba(127, 123, 123, 0.9);
+    box-shadow: 0 0 10px -2px rgba(127, 123, 123, 0.9);
+}
+
+.ui-block-13.about .about-box.active i, .ui-block-13.about .about-box.active h5 {
+    color: #fff;
+}
+
+.ui-block-13.about .about-box.active .about-opacity-icon i {
+    opacity: .09;
+}
+
+.ui-block-13.about .about-box.active:hover {
+    background: #23262d; /* Match custom hover background color */
+    -webkit-box-shadow: 0 0 5px rgba(127, 123, 123, 0.1);
+    box-shadow: 0 0 5px rgba(127, 123, 123, 0.1);
+}
+
+.ui-block-13.about .about-box.active:hover i{
+    color: #1ED873;
+}
+
+.ui-block-13.about .about-box.active:hover h5 {
+    color: #ffffff; /* Match custom color */
+}
+
+.ui-block-13.about .about-box.active:hover .about-opacity-icon i {
+    opacity: .09;
+}
+
+.ui-block-13.about .about-box.active.about-box-green {
+    background: #23262d; /* Match custom background color */
+    -webkit-box-shadow: 0 0 5px rgba(127, 123, 123, 0.1);
+    box-shadow: 0 0 5px rgba(127, 123, 123, 0.1);
+}
+
+.ui-block-13.about .about-box.active.about-box-green i {
+    color: #1ED873;
+}
+
+.ui-block-13.about .about-box.active.about-box-green h5 {
+    color: #ffffff; /* Match custom color */
+}
+
+.ui-block-13.about .about-box.active.about-box-green .about-opacity-icon i {
+    opacity: 0;
+}
+
+.ui-block-13.about .about-box.active.about-box-green:hover {
+    background: #1ED873; /* Match custom hover background color */
+}
+
+.ui-block-13.about .about-box.active.about-box-green:hover i {
+    color: #ffffff;
+}
+
+.ui-block-13.about .about-box.active.about-box-green:hover h5 {
+    color: #ffffff;
+}
+
+.ui-block-13.about .about-box.active.about-box-green:hover .about-opacity-icon i {
+    opacity: .09;
+}
+
+.ui-block-13.about h1, .ui-block-13.about h2, .ui-block-13.about h3, .ui-block-13.about h4, .ui-block-13.about h5, .ui-block-13.about h6 {
+    font-family: 'HandelGothicBT', sans-serif; /* Match custom font */
+}
+
+.ui-block-13.about h5 {
+    font-size: 1.25rem;
+}
+
+.ui-block-13.about.bg-light-gray3 {
+    background-color: #f2f2f2;
+}
+
+.ui-block-13.about .btn-setting {
+    padding: 9px 34px;
+    width: auto;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid transparent;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease !important;
+}
+
+.ui-block-13.about .btn-scale {
+    border: none;
+}
+
+.ui-block-13.about .btn-scale:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: -101%;
+    width: 101%;
+    height: 100%;
+    background: #1ED873;
+    z-index: -1;
+    top: 0;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    overflow: hidden;
+}
+
+.ui-block-13.about .btn-setting:hover.btn-scale:before, .ui-block-13.about .btn-setting:active.btn-scale:before, .ui-block-13.about .btn-setting:focus.btn-scale:before {
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.ui-block-13.about .btn-blue.btn-scale:before {
+    background: #1ED873; /* Match custom background color */
+}
+
+.ui-block-13.about .btn-blue {
+    border-color: #1ED873;
+    background-color: #1ED873;
+    color: #ffffff;
+}
+
+.ui-block-13.about p {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .ui-block-13.about {
+        text-align: center;
+    }
+    .ui-block-13.about h1 {
+        font-size: 2.65rem;
+    }
+    .ui-block-13.about h2, .ui-block-13.about .main-title.style-two h2 {
+        font-size: 2.2rem;
+    }
+    .ui-block-13.about .mb-xs-2rem {
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ui-block-13.about h1 {
+        font-size: 2.95rem;
+    }
+    .ui-block-13.about h2 {
+        font-size: 2.3rem;
+    }
+    .ui-block-13.about h3 {
+        font-size: 1.4rem;
+    }
+    .ui-block-13.about h4 {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .ui-block-13.about h1 {
+        font-size: 3.56rem;
+    }
+    .ui-block-13.about h2 {
+        font-size: 2.45rem;
+    }
+    .ui-block-13.about h3 {
+        font-size: 1.65rem;
+    }
+    .ui-block-13.about h4 {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 992px) {
+    .ui-block-13.about .about-img {
+        height: 580px;
+    }
+    .ui-block-13.about .image img.about-img {
+        height: 580px;
+    }
+}
