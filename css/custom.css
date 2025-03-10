@@ -72,6 +72,11 @@ p{font-family: 'GothamSSm', sans-serif;}
     font-family: 'GothamSSm', sans-serif;
     color: #1ED873;
 }
+.launch-server-heading {
+    font-weight: 200;
+    font-family: 'HandelGothicBT', sans-serif;
+    color: #fff;
+}
 .about .main-title p {
     max-width: 720px;
     margin: 0 auto;
