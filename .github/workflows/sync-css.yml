@@ -1,12 +1,15 @@
-name: Sync custom.css to Green Finance AI page
+name: Sync custom.css to Green Finance AI
 
 on:
   push:
     paths:
       - "css/custom.css"
+    branches:
+      - main
 
 jobs:
   sync-file:
+    if: github.actor != 'github-actions[bot]'  # Prevents infinite loops
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source repo
@@ -19,13 +22,14 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Clone the target repository
+          # Clone the target repository (Green-Finance-AI)
           git clone https://$PAT_TOKEN@github.com/Green-Finance-AI/Green-Finance-AI.git target-repo
           
-          # Copy the custom.css file to the target repo
+          # Copy the file
           cp css/custom.css target-repo/dark-creative/css/custom.css
 
           cd target-repo
           git add dark-creative/css/custom.css
-          git commit -m "Sync custom.css from Training Platform repo"
-          git push
+
+          # Commit only if there are changes, otherwise exit successfully
+          git diff --cached --exit-code || (git commit -m "Sync custom.css from Training Platform repo" && git push)
