@@ -149,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- Links to Training Environments -->
         <div class="row text-center align-items-center justify-content-center mt-5">
             <!-- JupyterHub Link -->
-            <div class="col-md-5 wow fadeInLeft" data-wow-duration="1s">
+            <div class="col-md-5 wow slideInLeft" data-wow-duration="1s">
                 <a id="launch-jupyter" href="https://training.greenfinanceai.com/jupyter/" target="_blank">
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter" width="100" style="max-width: 100%;">
                 </a>
@@ -157,10 +157,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- Spacer -->
-            <div class="col-md-1"></div>
+            <div class="col-sm-1"></div>
 
             <!-- RStudio Link -->
-            <div class="col-md-5 wow fadeInRight" data-wow-duration="1s">
+            <div class="col-md-5 wow slideInRight" data-wow-duration="1s">
                 <a id="launch-rstudio" href="https://training.greenfinanceai.com/rstudio/" target="_blank">
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rstudio/rstudio-original.svg" alt="RStudio" width="85" style="max-width: 100%;">
                 </a>
