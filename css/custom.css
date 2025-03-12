@@ -28,7 +28,7 @@
 /* Icon Text Hover */
 .github-text-hvr:hover{color:#8E47FE !important;}
 .docker-text-hvr:hover{color:#1D63ED !important;}
-.envelope-text-hvr:hover{color:#1ED873 !important;}
+.envelope-text-hvr:hover{color:#01D077 !important;}
 .linkedin-text-hvr:hover{color:#0A66C2 !important;}
 
 /* ===================================
@@ -70,7 +70,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 .about .main-title h5 {
     font-weight: 200;
     font-family: 'GothamSSm', sans-serif;
-    color: #1ED873;
+    color: #01D077;
 }
 .launch-server-heading {
     font-weight: 200;
@@ -173,7 +173,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .fixed-nav-on-scroll:hover, .quarter-circle:hover {
-    background: linear-gradient(135deg, #8a76ff, #45ffaa, #1ed873);
+    background: linear-gradient(135deg, #8a76ff, #45ffaa, #01D077);
     box-shadow: 0 0 15px rgba(69, 255, 170, 0.8), 0 0 25px rgba(123, 104, 238, 0.5);
 }
 .btn {
@@ -202,11 +202,11 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .go-top:hover {
-    background: linear-gradient(135deg, #8a76ff, #45ffaa, #1ed873);
+    background: linear-gradient(135deg, #8a76ff, #45ffaa, #01D077);
     box-shadow: 0 0 15px rgba(69, 255, 170, 0.8), 0 0 25px rgba(123, 104, 238, 0.5);
 }
 ::-webkit-scrollbar-thumb {
-    background: #1ED873; /* Fallback color */
+    background: #01D077; /* Fallback color */
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(135deg, #7a67ee, #32ff90, #1abc6e); /* Apply the same gradient */
@@ -219,7 +219,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 .icon-class {
     width: 42px; /* Match the size of the Font Awesome icons */
     height: 42px; /* Match the size of the Font Awesome icons */
-    fill: #1ED873; /* Match the color of the Font Awesome icons */
+    fill: #01D077; /* Match the color of the Font Awesome icons */
 }
 
 .opacity-icon {
@@ -254,7 +254,7 @@ p{font-family: 'GothamSSm', sans-serif;}
     font-family: 'GothamSSm', sans-serif; /* Match custom font */
     font-weight: 200; /* Match custom font weight */
     margin-bottom: 1.1rem;
-    color: #1ED873; /* Match custom color */
+    color: #01D077; /* Match custom color */
     font-size: 16px;
 }
 
@@ -310,13 +310,13 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .ui-block-13.about .about-box:hover {
-    background: #1ED873; /* Match custom hover background color */
+    background: #01D077; /* Match custom hover background color */
     -webkit-box-shadow: 0 0 10px -2px rgba(127, 123, 123, 0.9);
     box-shadow: 0 0 10px -2px rgba(127, 123, 123, 0.9);
 }
 
 .ui-block-13.about .about-box .about-main-icon i {
-    color: #1ED873;
+    color: #01D077;
     font-size: 40px;
     transform: translateY(0);
     transition: ease-in-out 0.3s;
@@ -346,7 +346,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 
 .ui-block-13.about .about-opacity-icon i {
     position: absolute;
-    color: #1ED873; /* Match custom color */
+    color: #01D077; /* Match custom color */
     top: 30px;
     font-size: 120px;
     font-weight: 800;
@@ -370,7 +370,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .ui-block-13.about .about-box.active {
-    background: #1ED873; /* Match custom active background color */
+    background: #01D077; /* Match custom active background color */
     -webkit-box-shadow: 0 0 10px -2px rgba(127, 123, 123, 0.9);
     box-shadow: 0 0 10px -2px rgba(127, 123, 123, 0.9);
 }
@@ -390,7 +390,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .ui-block-13.about .about-box.active:hover i{
-    color: #1ED873;
+    color: #01D077;
 }
 
 .ui-block-13.about .about-box.active:hover h5 {
@@ -408,7 +408,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .ui-block-13.about .about-box.active.about-box-green i {
-    color: #1ED873;
+    color: #01D077;
 }
 
 .ui-block-13.about .about-box.active.about-box-green h5 {
@@ -420,7 +420,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .ui-block-13.about .about-box.active.about-box-green:hover {
-    background: #1ED873; /* Match custom hover background color */
+    background: #01D077; /* Match custom hover background color */
 }
 
 .ui-block-13.about .about-box.active.about-box-green:hover i {
@@ -478,7 +478,7 @@ p{font-family: 'GothamSSm', sans-serif;}
     left: -101%;
     width: 101%;
     height: 100%;
-    background: #1ED873;
+    background: #01D077;
     z-index: -1;
     top: 0;
     -webkit-transition: all 0.7s;
@@ -498,12 +498,12 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .ui-block-13.about .btn-blue.btn-scale:before {
-    background: #1ED873; /* Match custom background color */
+    background: #01D077; /* Match custom background color */
 }
 
 .ui-block-13.about .btn-blue {
-    border-color: #1ED873;
-    background-color: #1ED873;
+    border-color: #01D077;
+    background-color: #01D077;
     color: #ffffff;
 }
 
