@@ -63,9 +63,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
             <div class="collapse navbar-collapse" id="megaone">
                 <div class="navbar-nav  ml-auto mr-auto">
-                    <a class="nav-link line" href="https://greenfinanceai.com">Home</a>
-                    <a class="nav-link scroll line" href="#home">Training</a>
-                    <a class="nav-link line" href="https://greenfinanceai.com#contact">Contact</a>
+                    <a id="navbar-home" class="nav-link line" href="https://greenfinanceai.com">Home</a>
+                    <a id="navbar-training" class="nav-link scroll line" href="#home">Training</a>
+                    <a id="navbar-contact" class="nav-link line" href="https://greenfinanceai.com#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -83,22 +83,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <nav class="side-nav w-100">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://greenfinanceai.com">Home</a>
+                        <a id="sidenav-home" class="nav-link" href="https://greenfinanceai.com">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Training</a>
+                        <a id="sidenav-training" class="nav-link scroll" href="#home">Training</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://greenfinanceai.com#contact">Contact</a>
+                        <a id="sidenav-contact" class="nav-link" href="https://greenfinanceai.com#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="side-footer w-100">
                 <ul class="social-icons-simple">
-                    <li><a class="github-text-hvr" href="https://github.com/Green-Finance-AI"><i class="fab fa-github"></i></a></li>
-                    <li><a class="docker-text-hvr" href="https://hub.docker.com/u/alicesoto"><i class="fab fa-docker"></i></a></li>
-                    <li><a class="envelope-text-hvr" href="mailto:info@greenfinanceai.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a id="side-footer-link" class="github-text-hvr" href="https://github.com/Green-Finance-AI"><i class="fab fa-github"></i></a></li>
+                    <li><a id="side-footer-link" class="docker-text-hvr" href="https://hub.docker.com/u/alicesoto"><i class="fab fa-docker"></i></a></li>
+                    <li><a id="side-footer-link" class="envelope-text-hvr" href="mailto:info@greenfinanceai.com"><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -178,14 +178,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!--Social-->
             <div class="col-12">
                 <div class="footer-social text-center">
-                    <ul class="list-unstyled">
-                        <!-- <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-x-twitter"></i><span></span></a></li>
-                        <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-google-plus-g"></i><span></span></a></li> -->
-                        <li><a class="wow fadeInUp" href="https://github.com/Green-Finance-AI"><i aria-hidden="true" class="fab fa-github"></i><span></span></a></li>
-                        <li><a class="wow fadeInDown" href="https://hub.docker.com/u/alicesoto"><i aria-hidden="true" class="fab fa-docker"></i><span></span></a></li>
-                        <!-- <li><a class="wow fadeInUp" href="https://www.linkedin.com/in/alicelepissier/"><i aria-hidden="true" class="fab fa-linkedin-in"></i><span></span></a></li> -->
-                        <li><a class="wow fadeInDown" href="mailto:info@greenfinanceai.com"><i aria-hidden="true" class="fa-solid fa-envelope"></i><span></span></a></li>
-                        <!-- <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-instagram"></i><span></span></a></li> -->
+                <ul class="list-unstyled">
+                        <li><a id="footer-link" class="wow fadeInUp" href="https://github.com/Green-Finance-AI"><i aria-hidden="true" class="fab fa-github"></i><span></span></a></li>
+                        <li><a id="footer-link" class="wow fadeInDown" href="https://hub.docker.com/u/alicesoto"><i aria-hidden="true" class="fab fa-docker"></i><span></span></a></li>
+                        <li><a id="footer-link" class="wow fadeInUp" href="mailto:info@greenfinanceai.com"><i aria-hidden="true" class="fa-solid fa-envelope"></i><span></span></a></li>
                     </ul>
                 </div>
             </div>
