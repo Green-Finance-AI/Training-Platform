@@ -9,7 +9,7 @@
 
 
 /* ===================================
-   Banner Section - now test sync the other way
+   Banner Section
 ====================================== */
 #particles-js {
     display: flex;
@@ -125,6 +125,9 @@ p{font-family: 'GothamSSm', sans-serif;}
 .pricing .actual_price .small_font {
     font-family: 'GothamSSm XNarrow', sans-serif;
     line-height: 1;
+}
+#contact-for-pricing {
+    margin-top: 5rem;
 }
 .footer .company-about {
     font-family: 'GothamSSm Narrow';

@@ -129,7 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="welcome" id="about">
     <div class="container">
         <div class="row text-center">
-            <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 wow zoomIn heading-area" data-wow-duration="1s">
+            <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 mb-5 wow zoomIn heading-area" data-wow-duration="1s">
                 <span class="sub-heading text-yellow">Empower your team with advanced analytical skills</span>
                 <h3 class="heading text-center">Green Finance AI Training Platform</h3>
                 <p>
@@ -168,6 +168,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
+
+    <!-- Contact for Pricing Button -->
+    <div class="row text-center align-items-center justify-content-center mt-5">
+        <div class="col-12">
+            <a id="contact-for-pricing" href="https://greenfinanceai.com/#contact" class="btn btn-medium btn-yellow">Contact for Pricing</a>
+        </div>
+    </div>
+
 </section>
 <!-- End Inner Content -->
 
