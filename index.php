@@ -58,8 +58,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="navbar navbar-top-default navbar-expand-lg navbar-simple nav-line">
         <div class="container">
             <a href="#slider-area" title="Logo" class="logo scroll">
-                <!--Logo Default-->
-                <img src="img/future-forward-ventures-logo-small.png" title="logo" alt="logo" class="logo-default">
+                <img src="dark-creative/img/Green-Finance-AI-logo.png" title="logo" alt="Green Finance AI logo" class="logo-default">
             </a>
             <div class="collapse navbar-collapse" id="megaone">
                 <div class="navbar-nav  ml-auto mr-auto">
