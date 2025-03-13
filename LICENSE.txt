@@ -1,0 +1,23 @@
+Version 1.0 – 2025
+Copyright © 2025 Green Finance AI
+
+1. Grant of License
+You (the "User") are granted a limited, non-exclusive, non-transferable, and revocable license to use this platform and its associated materials solely for personal, educational, or research purposes.
+
+2. Restrictions
+The User may NOT:
+
+Use this software, code, or related materials for commercial purposes (e.g., selling, licensing, or offering paid services based on it).
+Modify, distribute, sublicense, or create derivative works for financial gain.
+Host, deploy, or offer this platform as a service to third parties (paid or free).
+Remove or alter copyright notices or license terms.
+3. Commercial Use Exception
+If you wish to use this platform for commercial purposes (e.g., integrate it into your business, provide paid services, or modify it for resale), you must obtain written permission from Green Finance AI and may be subject to a commercial licensing agreement.
+
+4. Disclaimer & Liability
+This platform is provided "as is", without warranties of any kind. The author(s) are not responsible for any damages, data loss, or other consequences resulting from its use. Use at your own risk.
+
+5. Termination
+Violation of this license automatically terminates your right to use the platform.
+
+For commercial inquiries or licensing requests, contact: info@greenfinanceai.com.
