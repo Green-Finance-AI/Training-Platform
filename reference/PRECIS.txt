@@ -1,0 +1,83 @@
+ssh root@<droplet-ip>
+
+sudo umount /mnt/volume_...
+sudo mkdir /data && sudo mount /dev/sda /data
+
+sudo nano /etc/fstab
+sudo mount -a
+
+sudo mkdir -p /data/home && sudo mv /home /data && sudo ln -s /data/home /home 
+
+for i in {1..10}; do
+  sudo adduser user$i --gecos "User $i" --disabled-password
+  echo "user$i:password$i" | sudo chpasswd
+  sudo mkdir -p /home/user$i
+  sudo chown user$i:user$i /home/user$i
+done
+
+sudo mkdir -p /data/shared && sudo chmod 777 /data/shared
+for i in {1..10}; do
+  sudo ln -s /data/shared /home/user$i/shared
+done
+
+
+
+
+sudo apt update -qq && sudo apt upgrade -y
+
+sudo apt install -y --no-install-recommends software-properties-common dirmngr
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc > /dev/null
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/" && sudo apt install -y --no-install-recommends r-base
+
+sudo apt update -qq && sudo apt install -y r-base-dev
+
+sudo apt install -y build-essential libcurl4-openssl-dev libssl-dev libfontconfig1-dev libxml2-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+
+sudo apt install -y gdebi-core
+wget https://download2.rstudio.org/server/focal/amd64/rstudio-server-2024.09.1-394-amd64.deb  
+sudo gdebi --non-interactive rstudio-server-2024.09.1-394-amd64.deb && rm ~/rstudio-server-2024.09.1-394-amd64.deb 
+
+sudo nano /etc/rstudio/rserver.conf
+sudo systemctl restart rstudio-server
+
+
+
+
+sudo apt update -qq && sudo apt install python3 python3-pip python3-venv -y
+
+sudo pip3 install --upgrade packaging
+sudo pip3 install jupyterlab -q
+
+jupyter lab --generate-config 
+
+sudo nano ~/.jupyter/jupyter_lab_config.py
+
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt update -qq && sudo apt install -y nodejs
+sudo npm install -g npm@latest
+sudo npm install -g configurable-http-proxy
+
+sudo pip3 install nbgrader jupyterhub -q
+
+jupyterhub --generate-config
+sudo mkdir -p /etc/jupyterhub && sudo mv jupyterhub_config.py /etc/jupyterhub/jupyterhub_config.py
+
+sudo nano /etc/jupyterhub/jupyterhub_config.py
+
+sudo nano /etc/systemd/system/jupyterhub.service
+sudo systemctl daemon-reload
+sudo systemctl start jupyterhub
+sudo systemctl enable jupyterhub 
+
+
+
+sudo apt install nginx -y
+
+sudo nano /etc/nginx/sites-available/training
+
+sudo ln -s /etc/nginx/sites-available/training /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+
+sudo apt install certbot python3-certbot-nginx -y
+sudo certbot --nginx -d training.greenfinanceai.com
