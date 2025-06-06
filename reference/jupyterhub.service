@@ -1,0 +1,14 @@
+# Save in /etc/systemd/system/jupyterhub.service
+[Unit]
+Description=JupyterHub Service
+After=network.target
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/jupyterhub -f /etc/jupyterhub/jupyterhub_config.py
+WorkingDirectory=/root
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
