@@ -1,0 +1,9 @@
+# Save in C:/Users/Alice/.wslconfig
+[wsl2]
+networkingMode=NAT
+# Set the VM idle timeout to unlimited
+vmIdleTimeout=0
+
+[experimental]
+hostAddressLoopback=true
+bestEffortDnsParsing=true
