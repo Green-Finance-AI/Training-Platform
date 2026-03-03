@@ -108,6 +108,7 @@ p{font-family: 'GothamSSm', sans-serif;}
 .pricing .price-item {
     border-radius: 10px;
     overflow: hidden;
+    background: #000000;
 }
 .pricing .price_header_text {
     font-weight: 500;
