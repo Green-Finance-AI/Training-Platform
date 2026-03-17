@@ -67,8 +67,9 @@ p{font-family: 'GothamSSm', sans-serif;}
     font-family: 'HandelGothic', sans-serif;
 }
 .heading-area .sub-heading {
-    font-weight: 200;
+    font-weight: 300;
     font-family: 'GothamSSm', sans-serif;
+    letter-spacing: 2px;
 }
 .about .main-title h2 {
     font-weight: normal;
@@ -269,11 +270,12 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 .ui-block-13.about .main-title .sub-heading {
-    font-weight: 200;
+    font-weight: 300;
     font-family: 'GothamSSm', sans-serif;
     font-size: 16px;
     margin-bottom: 1.1rem;
     display: block;
+    letter-spacing: 2px;
 }
 
 .ui-block-13.about .main-title h2 {
@@ -564,11 +566,12 @@ p{font-family: 'GothamSSm', sans-serif;}
 }
 
 #ai-evaluation .ai-eval-card .sub-heading {
-    font-weight: 200;
+    font-weight: 300;
     font-family: 'GothamSSm', sans-serif;
     font-size: 16px;
     margin-bottom: 1.1rem;
     display: block;
+    letter-spacing: 2px;
 }
 
 @media screen and (max-width: 767px) {
