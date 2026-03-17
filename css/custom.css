@@ -529,6 +529,48 @@ p{font-family: 'GothamSSm', sans-serif;}
     font-size: 15px;
 }
 
+/* ===================================
+   AI Evaluation Section
+====================================== */
+#ai-evaluation .ai-eval-card {
+    background: #181a1f;
+    border-left: 3px solid #1ED873;
+    border-radius: 0 8px 8px 0;
+    padding: 2.5rem;
+}
+
+#ai-evaluation .ai-eval-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 1.5rem;
+}
+
+#ai-evaluation .ai-eval-pill {
+    background: transparent;
+    border: 1px solid #1ED873;
+    color: #1ED873;
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-family: 'GothamSSm Narrow', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: box-shadow 0.3s ease;
+}
+
+#ai-evaluation .ai-eval-pill:hover {
+    box-shadow: 0 0 12px rgba(30, 216, 115, 0.7), 0 0 20px rgba(30, 216, 115, 0.4);
+}
+
+#ai-evaluation .ai-eval-card .sub-heading {
+    font-weight: 200;
+    font-family: 'GothamSSm', sans-serif;
+    font-size: 16px;
+    margin-bottom: 1.1rem;
+    display: block;
+}
+
 @media screen and (max-width: 767px) {
     .ui-block-13.about {
         text-align: center;
