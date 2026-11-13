@@ -627,3 +627,304 @@ p{font-family: 'GothamSSm', sans-serif;}
         height: 580px;
     }
 }
+
+/* ===================================
+   Agentic Workflows Section
+   (all rules scoped to #agentic)
+====================================== */
+#agentic {
+    background: #181a1f;
+    text-align: left;
+}
+
+#agentic .sub-heading {
+    display: block;
+    font-family: 'GothamSSm', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 1.1rem;
+}
+
+#agentic h2 {
+    font-family: 'HandelGothicBT', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+#agentic .agentic-intro p,
+#agentic .agentic-method-item p,
+#agentic .agentic-close p {
+    font-family: 'GothamSSm', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#agentic .agentic-intro p {
+    max-width: 34em;
+    margin: 0 0 1rem;
+    padding-bottom: 0;
+}
+
+#agentic .agentic-intro p + p {
+    margin-top: 1rem;
+}
+
+#agentic .agentic-cta {
+    margin-top: 1.25rem;
+    cursor: pointer;
+}
+
+/* The run: one workflow drawn as a track of ring nodes, after the logo */
+#agentic .agentic-run {
+    background: #23262d;
+    border-radius: 10px;
+    padding: 2.5rem 2.25rem 1rem;
+}
+
+#agentic .agentic-run-label {
+    display: block;
+    font-family: 'GothamSSm Narrow', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 0.4rem;
+}
+
+#agentic .agentic-run-head h3 {
+    font-family: 'GothamSSm', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 1.75rem;
+}
+
+#agentic .agentic-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Track behind the nodes, in the logo's lime-to-green gradient */
+#agentic .agentic-steps::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 12px;
+    bottom: 40px;
+    width: 4px;
+    border-radius: 2px;
+    background: linear-gradient(180deg, #DDFF55 0%, #00D178 55%, #B04DFF 100%);
+    transform-origin: top;
+}
+
+#agentic .agentic-step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    column-gap: 1.25rem;
+    align-items: start;
+    padding-bottom: 1.5rem;
+}
+
+#agentic .agentic-node {
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    border-radius: 50%;
+    border: 5px solid #00D178;
+    background: #23262d;
+    position: relative;
+    z-index: 1;
+}
+
+#agentic .agentic-step:first-child .agentic-node {
+    border-color: #DDFF55;
+}
+
+#agentic .agentic-step-text strong {
+    display: block;
+    font-family: 'GothamSSm', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+#agentic .agentic-step-text span {
+    display: block;
+    font-family: 'GothamSSm Narrow', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#agentic .agentic-step-tag {
+    font-family: 'GothamSSm Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #00D178;
+    text-align: right;
+    white-space: nowrap;
+    min-width: 7.5em;
+}
+
+/* The step where a person decides is the only place the brand purple appears */
+#agentic .agentic-step-human .agentic-node {
+    border-color: #B04DFF;
+}
+
+#agentic .agentic-step-human .agentic-step-tag {
+    color: #c98aff;
+}
+
+#agentic .agentic-step-human .agentic-node::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    bottom: -9px;
+    left: -9px;
+    border-radius: 50%;
+    border: 2px solid #B04DFF;
+    opacity: 0;
+}
+
+/* How we work: plain text columns under a shared rule */
+#agentic .agentic-method {
+    margin-top: 4.5rem;
+}
+
+#agentic .agentic-method-item {
+    margin-bottom: 1.5rem;
+}
+
+#agentic .agentic-rule {
+    height: 2px;
+    border-radius: 1px;
+    background: linear-gradient(90deg, #DDFF55 0%, #00D178 50%, #B04DFF 100%);
+    margin-bottom: 1.5rem;
+}
+
+#agentic .agentic-method-item h4 {
+    font-family: 'GothamSSm', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    margin-bottom: 0.35rem;
+}
+
+#agentic .agentic-method-item p {
+    font-family: 'GothamSSm Narrow', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+}
+
+#agentic .agentic-close {
+    margin-top: 2rem;
+}
+
+#agentic .agentic-close p {
+    margin: 0;
+}
+
+#agentic .agentic-close .agentic-landing {
+    font-family: 'HandelGothicBT', sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1.35;
+    letter-spacing: 0;
+    color: #ffffff;
+    margin-top: 0;
+    max-width: 26em;
+}
+
+/* Hero line under the wordmark */
+#particles-js .hero-line {
+    font-family: 'GothamSSm', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 30em;
+    margin: 0.5rem auto 0.75rem;
+}
+
+/* One orchestrated moment: the run plays through once when it scrolls into view */
+@media (prefers-reduced-motion: no-preference) {
+    #agentic .agentic-run.is-armed .agentic-step {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    #agentic .agentic-run.is-armed .agentic-steps::before {
+        transform: scaleY(0);
+    }
+    #agentic .agentic-run.is-running .agentic-step {
+        opacity: 1;
+        transform: none;
+        transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+    #agentic .agentic-run.is-running .agentic-step:nth-child(2) { transition-delay: 0.45s; }
+    #agentic .agentic-run.is-running .agentic-step:nth-child(3) { transition-delay: 0.9s; }
+    #agentic .agentic-run.is-running .agentic-step:nth-child(4) { transition-delay: 1.35s; }
+    #agentic .agentic-run.is-running .agentic-step:nth-child(5) { transition-delay: 1.8s; }
+    #agentic .agentic-run.is-running .agentic-steps::before {
+        transform: scaleY(1);
+        transition: transform 2.2s linear;
+    }
+    #agentic .agentic-run.is-running .agentic-step-human .agentic-node::after {
+        animation: agentic-wait 1.1s ease-out 2.1s 1;
+    }
+}
+
+@keyframes agentic-wait {
+    from { opacity: 0.9; transform: scale(0.6); }
+    to { opacity: 0; transform: scale(1.3); }
+}
+
+#agentic a:focus-visible {
+    outline: 2px solid #DDFF55;
+    outline-offset: 3px;
+}
+
+@media (max-width: 991px) {
+    #agentic .agentic-intro {
+        margin-bottom: 3rem;
+    }
+    #agentic h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    #agentic h2 {
+        font-size: 28px;
+    }
+    #agentic .agentic-run {
+        padding: 1.5rem 1.25rem 0.75rem;
+    }
+    #agentic .agentic-step {
+        column-gap: 1rem;
+    }
+    #particles-js .hero-line {
+        font-size: 16px;
+        padding: 0 1rem;
+    }
+}
